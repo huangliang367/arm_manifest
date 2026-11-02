@@ -26,7 +26,7 @@
   <project path="source/u-boot"               name="u-boot.git"
            remote="u-boot" revision="refs/tags/v2025.01"/>
   <project path="source/linux"                name="linux.git"
-           remote="kernel" revision="refs/tags/v6.9.12"/>
+           remote="kernel" revision="refs/tags/v6.9"/>
   <project path="source/buildroot"            name="buildroot.git"
            remote="build"  revision="refs/tags/2025.02"/>
   <project path="." revision="main"           name="sdk.git"
