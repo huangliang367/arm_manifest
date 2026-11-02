@@ -29,6 +29,6 @@
            remote="kernel" revision="refs/tags/v6.9.12"/>
   <project path="source/buildroot"            name="buildroot.git"
            remote="build"  revision="refs/tags/2025.02"/>
-  <project path="."                           name="sdk.git"
+  <project path="." revision="main"           name="sdk.git"
            remote="sdk"/>
 </manifest>
