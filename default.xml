@@ -10,6 +10,7 @@
   <remote  name="u-boot" fetch="https://source.denx.de/u-boot"/>
   <remote  name="kernel" fetch="https://git.kernel.org/pub/scm/linux/kernel/git/stable"/>
   <remote  name="build"  fetch="https://github.com/buildroot"/>
+  <remote  name="sdk"    fetch="https://github.com/huangliang367"/>
 
   <default remote="kernel" revision="master" sync-j="8"/>
 
@@ -27,4 +28,6 @@
            remote="kernel" revision="refs/tags/v6.9.12"/>
   <project path="source/buildroot"            name="buildroot.git"
            remote="build"  revision="refs/tags/2025.02"/>
+  <project path="."                           name="sdk.git"
+           remote="sdk"/>
 </manifest>
