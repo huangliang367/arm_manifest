@@ -5,23 +5,24 @@
        scripts/sync.sh -m qemu-linux61.xml   （切换变体）
 -->
 <manifest>
-  <remote  name="tfa"    fetch="https://git.trustedfirmware.org/TF-A"/>
+  <remote  name="tfa"    fetch="https://github.com/ARM-software"/>
   <remote  name="optee"  fetch="https://github.com/OP-TEE"/>
-  <remote  name="u-boot" fetch="https://source.denx.de/u-boot"/>
-  <remote  name="kernel" fetch="https://git.kernel.org/pub/scm/linux/kernel/git/stable"/>
+  <remote  name="optee_examples"  fetch="https://github.com/linaro-swg"/>
+  <remote  name="u-boot" fetch="https://github.com/u-boot"/>
+  <remote  name="kernel" fetch="https://github.com/torvalds"/>
   <remote  name="build"  fetch="https://github.com/buildroot"/>
   <remote  name="sdk"    fetch="https://github.com/huangliang367"/>
 
   <default remote="kernel" revision="master" sync-j="8"/>
 
-  <project path="source/arm-trusted-firmware" name="arm-trusted-firmware.git"
+  <project path="source/atf" name="arm-trusted-firmware.git"
            remote="tfa"    revision="refs/tags/v2.14.0"/>
   <project path="source/optee/optee_os"       name="optee_os.git"
            remote="optee"  revision="refs/tags/4.5.0"/>
   <project path="source/optee/optee_client"   name="optee_client.git"
            remote="optee"  revision="refs/tags/4.5.0"/>
   <project path="source/optee/optee_examples" name="optee_examples.git"
-           remote="optee"  revision="refs/tags/4.5.0"/>
+           remote="optee_examples"  revision="refs/tags/4.5.0"/>
   <project path="source/u-boot"               name="u-boot.git"
            remote="u-boot" revision="refs/tags/v2025.01"/>
   <project path="source/linux"                name="linux.git"
