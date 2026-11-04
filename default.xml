@@ -5,7 +5,7 @@
        scripts/sync.sh -m qemu-linux61.xml   （切换变体）
 -->
 <manifest>
-  <remote  name="tfa"    fetch="https://github.com/ARM-software"/>
+  <remote  name="arm_software"    fetch="https://github.com/ARM-software"/>
   <remote  name="optee"  fetch="https://github.com/OP-TEE"/>
   <remote  name="optee_examples"  fetch="https://github.com/linaro-swg"/>
   <remote  name="u-boot" fetch="https://github.com/u-boot"/>
@@ -16,7 +16,9 @@
   <default remote="kernel" revision="master" sync-j="8"/>
 
   <project path="source/atf" name="arm-trusted-firmware.git"
-           remote="tfa"    revision="refs/tags/v2.14.0"/>
+           remote="arm_software"    revision="refs/tags/v2.14.0"/>
+  <project path="source/scp" name="SCP-firmware.git"
+           remote="arm_software"    revision="refs/tags/v2.14.0"/>
   <project path="source/optee/optee_os"       name="optee_os.git"
            remote="optee"  revision="refs/tags/4.5.0"/>
   <project path="source/optee/optee_client"   name="optee_client.git"
