@@ -18,7 +18,7 @@
   <project path="source/atf" name="arm-trusted-firmware.git"
            remote="arm_software"    revision="refs/tags/v2.14.0"/>
   <project path="source/scp" name="SCP-firmware.git"
-           remote="arm_software"    revision="refs/tags/v2.14.0"/>
+           remote="arm_software"    revision="refs/tags/v2.10.0"/>
   <project path="source/optee/optee_os"       name="optee_os.git"
            remote="optee"  revision="refs/tags/4.5.0"/>
   <project path="source/optee/optee_client"   name="optee_client.git"
